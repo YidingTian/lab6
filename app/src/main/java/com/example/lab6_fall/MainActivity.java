@@ -9,7 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 // to see the database, goot View > Tool Windows > Device File Explorer
-//data/data/your_package_name/databases
+//data/data/lab6_fall/databases
 public class MainActivity extends AppCompatActivity {
 
     TextView idView;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (product != null) {
             idView.setText(String.valueOf(product.getID()));
-            skuBox.setText(String.valueOf(product.getID()));
+            skuBox.setText(String.valueOf(product.getSku()));
         } else {
             idView.setText("No Match Found");
         }
